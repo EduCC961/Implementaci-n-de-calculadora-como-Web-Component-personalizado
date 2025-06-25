@@ -1,0 +1,6 @@
+/* CSS Personalizado */
+body {
+    background: linear-gradient(135deg, #6179a7 0%, #cfdef3 100%);
+    min-height: 100vh;
+    padding: 20px;
+}

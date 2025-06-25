@@ -6,6 +6,8 @@
     <title>Calculadora Basica</title>
     <!-- link de Bootstrap local -->
     <link rel="stylesheet" href="./public/lib/bootstrap-5.3.6-dist/css/bootstrap.min.css">
+    <!-- link de CSS personalizado -->
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body class="bg-light">
     <div class="container py-5">
@@ -17,7 +19,13 @@
             </div>
         </div>
     </div>
-    <!-- Importando el componente JS -->
+    <!-- Script del componente -->
+     <script>
+        document.querySelector('calculadora-basica').addEventListener('resultado-calculadora', e=> {
+            console.log('Resultado:', e.detail);
+        });
+     </script>
+    <!-- Importando el JS -->
     <script src="./public/js/java.js"></script>
 </body>
 </html>
